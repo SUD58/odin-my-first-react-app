@@ -6,12 +6,16 @@ import { Card } from "./Card";
 
 function App() {
 	const [count, setCount] = useState(0);
-	
+
 	return (
 		<>
 			<div className="flex flex-col gap-8">
-		<Greeting />
-		<Card />
+				<Greeting />
+				<div className="flex gap-4">
+					<Card />
+					<Card />
+					<Card />
+				</div>
 				{/* <a href="https://vite.dev" target="_blank">
 					<img src={viteLogo} className="logo" alt="Vite logo" />
 				</a>
